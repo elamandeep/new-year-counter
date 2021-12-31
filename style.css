@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500&family=Istok+Web:wght@400;700&display=swap');
+
+body{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffe5b4;
+    padding: 4rem;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.card{
+    width: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffe5b4;
+    border: 4px solid #490168;
+    border-radius: 10px;
+    filter: drop-shadow(3px 6px 4px #21032e);
+    
+    margin: 5px 20px;
+}
+#hour ,#min,#sec{
+    font-size: 3rem;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 500;
+    color: #21032e;
+    text-shadow: 1px 2px 3px #21032e;
+}
+
+span{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: 'Istok Web', sans-serif;
+    font-weight: 700;
+
+}
+img{
+    background-color: #490168;
+    border-radius: 50%;
+}
+.invisible{
+    display: none;
+}
+
+@media screen and (max-width:800px) {
+    .container{
+        flex-direction: column;
+    }
+    .card{
+        width: 10rem;
+    }
+    img{
+        width: 5rem;
+        height: 5rem;
+    }
+}
